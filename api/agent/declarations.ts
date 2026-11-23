@@ -1,9 +1,9 @@
 // AgroNex Agentic System - Gemini Function Declarations
 // Native schema declarations for @google/genai
 
-import { Type } from '@google/genai';
+import { Type, type FunctionDeclaration } from '@google/genai';
 
-export const AGENT_FUNCTION_DECLARATIONS = [
+export const AGENT_FUNCTION_DECLARATIONS: FunctionDeclaration[] = [
   {
     name: 'calculate_fertilizer',
     description: 'Calculate official BARC (Bangladesh Agricultural Research Council) fertilizer dosage and split schedule for Boro rice, Aman, Potato, Maize, Tomato, Mustard, or other crops based on land size.',
